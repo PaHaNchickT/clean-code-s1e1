@@ -12,53 +12,59 @@
   </head>
 
   <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix Screenshot" />
+    <header class="header">
+      <img
+        src="./eisenhower-matrix.jpg"
+        class="header__image global-img"
+        alt="Eisenhower matrix Screenshot"
+      />
       <a
-        class="more_inf"
+        class="header__link-more"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         >Want more details?</a
       >
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
+    </header>
+    <div class="container">
+      <p id="itm-add-head">
+        <label for="add-itm__input" class="itm-add-head__label global-label"
+          >Add Item</label
+        >
       </p>
 
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text" />
-        <button>Add</button>
+      <div class="itm-add">
+        <input id="itm-add__input" class="field global-input" type="text" />
+        <button class="itm-add__button global-btn">Add</button>
       </div>
-      <h3>Todo</h3>
-      <ul id="incompleteTasks">
+      <h3 class="title">Todo</h3>
+      <ul id="itm-incomplete" class="global-list">
         <li>
-          <input type="checkbox" />
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task" />
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button" />
+          <input type="checkbox" class="global-input" />
+          <label class="field global-label">Pay Bills</label>
+          <input type="text" class="field global-input" />
+          <button class="edit-btn global-btn">Edit</button>
+          <button class="delete-btn global-btn">
+            <img src="./remove.svg" class="global-img" alt="Remove button" />
           </button>
         </li>
-        <li class="editMode">
-          <input type="checkbox" />
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task" />
-          <button class="edit">Save</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button" />
+        <li class="edit-mode">
+          <input type="checkbox" class="global-input" />
+          <label class="field global-label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="field global-input" />
+          <button class="edit-btn global-btn">Save</button>
+          <button class="delete-btn global-btn">
+            <img src="./remove.svg" class="global-img" alt="Remove button" />
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
+      <h3 class="title">Completed</h3>
+      <ul id="itm-complete" class="global-list">
         <li>
-          <input type="checkbox" checked />
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task" />
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button" />
+          <input type="checkbox" class="global-input" checked />
+          <label class="field global-label">See the Doctor</label>
+          <input type="text" class="field global-input" />
+          <button class="edit-btn global-btn">Edit</button>
+          <button class="delete-btn global-btn">
+            <img src="./remove.svg" class="global-img" alt="Remove button" />
           </button>
         </li>
       </ul>
