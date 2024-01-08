@@ -15,7 +15,7 @@
     <header class="header">
       <img
         src="./eisenhower-matrix.jpg"
-        class="header__image global-img"
+        class="header__image"
         alt="Eisenhower matrix Screenshot"
       />
       <a
@@ -24,47 +24,47 @@
         >Want more details?</a
       >
     </header>
-    <section class="container">
+    <section class="itm-global-list">
       <p id="itm-add-head">
-        <label for="add-itm__input" class="itm-add-head__label global-label"
+        <label for="add-itm__input" class="itm-add-head__label itm-global__label"
           >Add Item</label
         >
       </p>
 
       <div class="itm-add">
-        <input id="itm-add__input" class="field global-input" type="text" />
-        <button class="itm-add__button global-btn">Add</button>
+        <input id="itm-add__input" class="itm-global__field itm-global__input" type="text" />
+        <button class="itm-add__button itm-global__btn">Add</button>
       </div>
-      <h3 class="title">Todo</h3>
-      <ul id="itm-incomplete" class="global-list">
+      <h3 class="itm-global__title">Todo</h3>
+      <ul id="itm-global__incomplete" class="itm-global__ul">
         <li>
-          <input type="checkbox" class="global-input" />
-          <label class="field global-label">Pay Bills</label>
-          <input type="text" class="field global-input" />
-          <button class="edit-btn global-btn">Edit</button>
-          <button class="delete-btn global-btn">
-            <img src="./remove.svg" class="global-img" alt="Remove button" />
+          <input type="checkbox" class="itm-global__input" />
+          <label class="itm-global__field itm-global__label">Pay Bills</label>
+          <input type="text" class="itm-global__field itm-global__input" />
+          <button class="itm-global__edit-btn itm-global__btn">Edit</button>
+          <button class="itm-global__del-btn itm-global__btn">
+            <img src="./remove.svg" class="itm-global__img" alt="Remove button" />
           </button>
         </li>
-        <li class="edit-mode">
-          <input type="checkbox" class="global-input" />
-          <label class="field global-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="field global-input" />
-          <button class="edit-btn global-btn">Save</button>
-          <button class="delete-btn global-btn">
-            <img src="./remove.svg" class="global-img" alt="Remove button" />
+        <li class="itm-global__edit-mode">
+          <input type="checkbox" class="itm-global__input" />
+          <label class="itm-global__field itm-global__label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="itm-global__field itm-global__input" />
+          <button class="itm-global__edit-btn itm-global__btn">Save</button>
+          <button class="itm-global__del-btn itm-global__btn">
+            <img src="./remove.svg" class="itm-global__img" alt="Remove button" />
           </button>
         </li>
       </ul>
-      <h3 class="title">Completed</h3>
-      <ul id="itm-complete" class="global-list">
+      <h3 class="itm-global__title">Completed</h3>
+      <ul id="itm-global__complete" class="itm-global__ul">
         <li>
-          <input type="checkbox" class="global-input" checked />
-          <label class="field global-label">See the Doctor</label>
-          <input type="text" class="field global-input" />
-          <button class="edit-btn global-btn">Edit</button>
-          <button class="delete-btn global-btn">
-            <img src="./remove.svg" class="global-img" alt="Remove button" />
+          <input type="checkbox" class="itm-global__input" checked />
+          <label class="itm-global__field itm-global__label">See the Doctor</label>
+          <input type="text" class="itm-global__field itm-global__input" />
+          <button class="itm-global__edit-btn itm-global__btn">Edit</button>
+          <button class="itm-global__del-btn itm-global__btn">
+            <img src="./remove.svg" class="itm-global__img" alt="Remove button" />
           </button>
         </li>
       </ul>
