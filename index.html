@@ -1,19 +1,96 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+    />
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
+    <title>Todo App</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        src="./eisenhower-matrix.jpg"
+        class="header__image"
+        alt="Eisenhower matrix Screenshot"
+      />
+      <a
+        class="header__link-more"
+        href="https://goal-life.com/page/method/matrix-eisenhower"
+        >Want more details?</a
+      >
+    </header>
+    <section class="itm-global-list">
+      <p id="itm-add-head">
+        <label
+          for="add-itm__input"
+          class="itm-add-head__label itm-global__label"
+          >Add Item</label
+        >
+      </p>
+
+      <div class="itm-add">
+        <input
+          id="itm-add__input"
+          class="itm-global__field itm-global__input"
+          type="text"
+        />
+        <button class="itm-add__button itm-global__btn">Add</button>
+      </div>
+      <h3 class="itm-global__title">Todo</h3>
+      <ul id="itm-global__incomplete" class="itm-global__ul">
+        <li>
+          <input type="checkbox" class="itm-global__input" />
+          <label class="itm-global__field itm-global__label">Pay Bills</label>
+          <input type="text" class="itm-global__field itm-global__input" />
+          <button class="itm-global__edit-btn itm-global__btn">Edit</button>
+          <button class="itm-global__del-btn itm-global__btn">
+            <img
+              src="./remove.svg"
+              class="itm-global__img"
+              alt="Remove button"
+            />
+          </button>
+        </li>
+        <li class="itm-global__edit-mode">
+          <input type="checkbox" class="itm-global__input" />
+          <label class="itm-global__field itm-global__label">Go Shopping</label>
+          <input
+            type="text"
+            value="Go Shopping"
+            class="itm-global__field itm-global__input"
+          />
+          <button class="itm-global__edit-btn itm-global__btn">Save</button>
+          <button class="itm-global__del-btn itm-global__btn">
+            <img
+              src="./remove.svg"
+              class="itm-global__img"
+              alt="Remove button"
+            />
+          </button>
+        </li>
+      </ul>
+      <h3 class="itm-global__title">Completed</h3>
+      <ul id="itm-global__complete" class="itm-global__ul">
+        <li>
+          <input type="checkbox" class="itm-global__input" checked />
+          <label class="itm-global__field itm-global__label"
+            >See the Doctor</label
+          >
+          <input type="text" class="itm-global__field itm-global__input" />
+          <button class="itm-global__edit-btn itm-global__btn">Edit</button>
+          <button class="itm-global__del-btn itm-global__btn">
+            <img
+              src="./remove.svg"
+              class="itm-global__img"
+              alt="Remove button"
+            />
+          </button>
+        </li>
+      </ul>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
